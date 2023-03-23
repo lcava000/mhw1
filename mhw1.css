@@ -1,0 +1,244 @@
+body{
+    font-family: 'Montserrat', Arial;
+    color: black;
+    font-size: 13pt;
+    margin: 0;
+}
+
+header{
+    height: 500px;
+    display: flex;
+    background-image: url(background.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#header_overlay{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+}
+
+#logo_image{
+    width: 40%;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+header ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+header li {
+    float: left;
+}
+  
+header li a {
+    margin: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+  
+li a:hover{
+    text-decoration: underline;
+}
+
+header #header_text {
+    max-width: 760px;
+    font-family: 'Montserrat', Arial;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 1;
+}
+
+header #header_text em{
+    display: inline-block;
+    font-style: italic;
+    font-size: 0.5em;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+header #header_text strong{
+    display: inline-block;
+    font-family: 'Bad Script', Arial;
+    margin-bottom: 10px;
+}
+
+.oval{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-size: .4em;
+    cursor: pointer;
+}
+
+a.oval:hover {
+    background-color: white;
+    color: black;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: 'Montserrat', Arial;
+    margin-bottom: 60px;
+}
+
+.center img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-bottom: 2px;
+    z-index: 1;
+}
+
+.center h3 {
+    font-size: 1.8em;
+    margin: 0;
+}
+.center h4 {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 69.67%;
+}
+
+article {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.number {
+    margin-right: 40px;
+    display: inline;
+    flex-grow: 1;
+    font-size: 2.5em;
+    color: gray;
+}
+
+article h1 {
+    font-size: 1.9em;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+article h2 {
+    color: black;
+    font-family: 'Bad Script', Arial;
+    font-size: 1.2em;
+    margin-top: 8px;
+}
+
+article p {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+article img {
+    max-width:100% 
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+}
+
+footer a {
+    margin: 40px;
+    color: white;
+}
+
+#menu {
+    display: none;
+    }
+    
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 20px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100vw;
+    }
+
+    article h1 {
+        font-size: 1.6em;
+    }
+    
+    article h2 {
+        font-size: 1.1em;
+    }
+
+    .number {
+        font-size: 2.5em;
+    }
+    
+    header li {
+        display: none;
+    }
+
+    #main {
+        width: 90%;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    article img {
+        width: 100%;
+    }
+
+
+  }
